@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style>
+        .main {
+            margin-top: 1em;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            border: 0.05em solid black;
+            grid-gap: 0.5em;
+        }
+
+        .Box {
+            margin: 0.15em;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            padding: 2em;
+        }
+
+        @media screen and (max-width: 576px) {
+            .main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Days of the Week -->
+        <div class="Day Box">Sun</div>
+        <div class="Day Box">Mon</div>
+        <div class="Day Box">Tue</div>
+        <div class="Day Box">Wed</div>
+        <div class="Day Box">Thu</div>
+        <div class="Day Box">Fri</div>
+        <div class="Day Box">Sat</div>
+
+        <!-- Dates -->
+        <div class="Date Box"></div> <!-- Empty box for padding -->
+        <div class="Date Box"></div> <!-- Empty box for padding -->
+        <div class="Date Box"></div> <!-- Empty box for padding -->
+        <div class="Date Box">1</div>
+        <div class="Date Box">2</div>
+        <div class="Date Box">3</div>
+        <div class="Date Box">4</div>
+        <div class="Date Box">5</div>
+        <div class="Date Box">6</div>
+        <div class="Date Box">7</div>
+        <div class="Date Box">8</div>
+        <div class="Date Box">9</div>
+        <div class="Date Box">10</div>
+        <div class="Date Box">11</div>
+        <div class="Date Box">12</div>
+        <div class="Date Box">13</div>
+        <div class="Date Box">14</div>
+        <div class="Date Box">15</div>
+        <div class="Date Box">16</div>
+        <div class="Date Box">17</div>
+        <div class="Date Box">18</div>
+        <div class="Date Box">19</div>
+        <div class="Date Box">20</div>
+        <div class="Date Box">21</div>
+        <div class="Date Box">22</div>
+        <div class="Date Box">23</div>
+        <div class="Date Box">24</div>
+        <div class="Date Box">25</div>
+        <div class="Date Box">26</div>
+        <div class="Date Box">27</div>
+        <div class="Date Box">28</div>
+        <div class="Date Box">29</div>
+        <div class="Date Box">30</div>
+        <div class="Date Box">31</div>
+    </div>
+</body>
+
+</html>
